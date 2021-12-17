@@ -9,32 +9,8 @@ class SweepReportAnalyzerTest {
     @Test
     fun `When there is only a single measurement the result should not increment`() {
         assertEquals(
-            expected = 0,
-            analyzer.analyse(listOf(1))
-        )
-    }
-
-    @Test
-    fun `When a larger measurement is followed by a smaller one the result should not increment`() {
-        assertEquals(
-            expected = 0,
-            analyzer.analyse(listOf(2, 1))
-        )
-    }
-
-    @Test
-    fun `When measurements are equal the result should not increment`() {
-        assertEquals(
-            expected = 0,
-            analyzer.analyse(listOf(1, 1))
-        )
-    }
-
-    @Test
-    fun `When a smaller measurement is followed by a larger one the result should increment`() {
-        assertEquals(
-            expected = 1,
-            analyzer.analyse(listOf(1, 2))
+            expected = 5,
+            analyzer.analyse(listOf(199, 200, 208, 210, 200, 207, 240, 269, 260, 263))
         )
     }
 }

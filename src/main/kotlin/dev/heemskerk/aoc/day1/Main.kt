@@ -12,6 +12,6 @@ fun main() {
         }
     }
 
-    print("How many measurements are larger than the previous measurement? " +
+    print("How many sums are larger than the previous sum? " +
             "[${SweepReportAnalyzer().analyse(sweepReport)}]")
 }
