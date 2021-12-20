@@ -9,7 +9,7 @@ class Day2Test {
     @Test
     fun example() {
         assertEquals(
-            expected = 150,
+            expected = 900,
             day.solve(listOf(
                 "forward 5",
                 "down 5",
